@@ -462,7 +462,7 @@ global.string = {
   how_to_use: 'How To Use',
   about_us: 'About Us',
   share_text:
-    'This app is a guide app for playing PUBG game. Get tricks and tips how to win every level in the game, and be a champion over your friends!\n\nThis app includes images that can make your gaming life easier, and the tutorial can be read clearly, so you will win easily without any help from your friends.\n\nShow it to your friends, and make your friends amazed! Try it now,\nDOWNLOAD FOR FREE: http://play.google.com/apps/l9.pubgmobilebattlegroundlite.guidepubgmbesttipstricks',
+    'DOWNLOAD FOR FREE: https://play.google.com/store/apps/details?id=com.al2_cara_menggunakan_2wa_di_1hp_sekaligus',
   newbie_guide: 'Newbie Guide',
   advance_guide: 'Advance Guide',
   pro_guide: 'Pro Guide',

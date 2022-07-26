@@ -22,6 +22,7 @@ import NativeAdView, {
 import AppLovinMAX from 'react-native-applovin-max'
 import { admobs, applovin } from '../utils/index.js'
 import BannerSmallAd from '../components/BannerSmallAd.js'
+import NativeBigAd from '../components/NativeBigAd.js'
 
 export default class Settings extends Component {
   constructor(props) {
@@ -57,7 +58,7 @@ export default class Settings extends Component {
 
   rateUs() {
     Linking.openURL(
-      'https://play.google.com/store/apps/details?id=' + PACKAGE_NAME
+      'https://play.google.com/store/apps/details?id=com.al2_cara_menggunakan_2wa_di_1hp_sekaligus'
     )
   }
 
@@ -174,7 +175,7 @@ export default class Settings extends Component {
               value={this.state.allowNotifications}
             />
           </View>
-          <Text
+          {/* <Text
             style={{
               color: '#adadad',
               fontSize: 15,
@@ -229,8 +230,8 @@ export default class Settings extends Component {
             }}
           >
             {string.contact_us}
-          </Text>
-          <TouchableOpacity
+          </Text> */}
+          {/* <TouchableOpacity
             style={{
               flex: 1,
               flexDirection: 'row',
@@ -247,8 +248,8 @@ export default class Settings extends Component {
             <Text style={{ color: '#FFFFFF', fontSize: 15, marginLeft: 16 }}>
               luckynine.cs@gmail.com
             </Text>
-          </TouchableOpacity>
-          <View
+          </TouchableOpacity> */}
+          {/* <View
             style={{
               flex: 1,
               height: 1,
@@ -267,8 +268,8 @@ export default class Settings extends Component {
             }}
           >
             {string.about}
-          </Text>
-          <TouchableOpacity
+          </Text> */}
+          {/* <TouchableOpacity
             style={{
               flexDirection: 'row',
               alignItems: 'center',
@@ -284,8 +285,8 @@ export default class Settings extends Component {
             <Text style={{ color: '#FFFFFF', fontSize: 17, marginLeft: 16 }}>
               {string.about}
             </Text>
-          </TouchableOpacity>
-          <TouchableOpacity
+          </TouchableOpacity> */}
+          {/* <TouchableOpacity
             style={{
               flexDirection: 'row',
               alignItems: 'center',
@@ -301,7 +302,7 @@ export default class Settings extends Component {
             <Text style={{ color: '#FFFFFF', fontSize: 17, marginLeft: 16 }}>
               {string.more_apps}
             </Text>
-          </TouchableOpacity>
+          </TouchableOpacity> */}
           <Text
             style={{
               color: '#adadad',
@@ -346,6 +347,9 @@ export default class Settings extends Component {
               {string.share_apps}
             </Text>
           </TouchableOpacity>
+
+          <View style={{ marginTop: 50 }} />
+          <NativeBigAd />
         </ScrollView>
         <BannerSmallAd />
         {/* <NativeAdView

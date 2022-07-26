@@ -20,6 +20,7 @@ import { applovin } from '../utils'
 import global from '../global.js'
 import BannerSmallAd from '../components/BannerSmallAd'
 import { admobs } from '../utils/index.js'
+import NativeBigAd from '../components/NativeBigAd'
 
 export default class Guide extends Component {
   constructor(props) {
@@ -236,83 +237,90 @@ export default class Guide extends Component {
                     index + 1 !==
                       this.state.categories.filter((cat) => cat.type !== 'ad')
                         .length && (
-                      <NativeAdView
-                        style={{
-                          height: 104,
-                          position: 'relative',
-                          width: '90%',
-                          alignSelf: 'center',
-                          marginVertical: 5,
-                        }}
-                        adUnitID={admobs.native}
-                      >
-                        <View
-                          style={{
-                            height: 104,
-                            width: '100%',
-                            backgroundColor: '#fff',
-                            borderRadius: 10,
-                          }}
-                        >
-                          <View
-                            style={{
-                              height: '100%',
-                              position: 'absolute',
-                              left: 24,
-                              top: 0,
-                              justifyContent: 'center',
-                            }}
-                          >
-                            <HeadlineView
-                              style={{
-                                color: '#000',
-                                fontSize: 14,
-                                fontWeight: 'bold',
-                                width: 140,
-                              }}
-                              numberOfLines={2}
-                            />
-                            <TaglineView
-                              numberOfLines={1}
-                              style={{
-                                color: '#000',
-                                fontSize: 15,
-                                width: 140,
-                              }}
-                            />
-                          </View>
-                          <IconView
-                            style={{
-                              position: 'absolute',
-                              left: 188,
-                              top: 0,
-                              width: this.state.imageWidth,
-                              height: 104,
-                              borderTopRightRadius: 8,
-                              borderBottomRightRadius: 8,
-                            }}
-                            resizeMode='contain'
-                          />
-                          <View
-                            style={{
-                              height: 30,
-                              paddingLeft: 8,
-                              paddingRight: 8,
-                              justifyContent: 'center',
-                              alignItems: 'center',
-                              position: 'absolute',
-                              top: 8,
-                              right: 6,
-                              backgroundColor: 'green',
-                              borderRadius: 4,
-                            }}
-                          >
-                            <Text style={{ color: '#fff', fontSize: 12 }}>
-                              {string.ad}
-                            </Text>
-                          </View>
-                        </View>
-                      </NativeAdView>
+                      <NativeBigAd />
+                      // <View>
+                      //   {index === 1 ? (
+                      //     <NativeBigAd />
+                      //   ) : (
+                      //     <NativeAdView
+                      //       style={{
+                      //         height: 104,
+                      //         position: 'relative',
+                      //         width: '90%',
+                      //         alignSelf: 'center',
+                      //         marginVertical: 5,
+                      //       }}
+                      //       adUnitID={admobs.native}
+                      //     >
+                      //       <View
+                      //         style={{
+                      //           height: 104,
+                      //           width: '100%',
+                      //           backgroundColor: '#fff',
+                      //           borderRadius: 10,
+                      //         }}
+                      //       >
+                      //         <View
+                      //           style={{
+                      //             height: '100%',
+                      //             position: 'absolute',
+                      //             left: 24,
+                      //             top: 0,
+                      //             justifyContent: 'center',
+                      //           }}
+                      //         >
+                      //           <HeadlineView
+                      //             style={{
+                      //               color: '#000',
+                      //               fontSize: 14,
+                      //               fontWeight: 'bold',
+                      //               width: 140,
+                      //             }}
+                      //             numberOfLines={2}
+                      //           />
+                      //           <TaglineView
+                      //             numberOfLines={1}
+                      //             style={{
+                      //               color: '#000',
+                      //               fontSize: 15,
+                      //               width: 140,
+                      //             }}
+                      //           />
+                      //         </View>
+                      //         <IconView
+                      //           style={{
+                      //             position: 'absolute',
+                      //             left: 188,
+                      //             top: 0,
+                      //             width: this.state.imageWidth,
+                      //             height: 104,
+                      //             borderTopRightRadius: 8,
+                      //             borderBottomRightRadius: 8,
+                      //           }}
+                      //           resizeMode='contain'
+                      //         />
+                      //         <View
+                      //           style={{
+                      //             height: 30,
+                      //             paddingLeft: 8,
+                      //             paddingRight: 8,
+                      //             justifyContent: 'center',
+                      //             alignItems: 'center',
+                      //             position: 'absolute',
+                      //             top: 8,
+                      //             right: 6,
+                      //             backgroundColor: 'green',
+                      //             borderRadius: 4,
+                      //           }}
+                      //         >
+                      //           <Text style={{ color: '#fff', fontSize: 12 }}>
+                      //             {string.ad}
+                      //           </Text>
+                      //         </View>
+                      //       </View>
+                      //     </NativeAdView>
+                      //   )}
+                      // </View>
                     )}
                 </>
               )
