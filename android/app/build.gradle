@@ -138,8 +138,8 @@ android {
         applicationId "com.al2_cara_menggunakan_2wa_di_1hp_sekaligus"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 3
-        versionName "3.0"
+        versionCode 4
+        versionName "4.0"
         multiDexEnabled true
     }
     splits {

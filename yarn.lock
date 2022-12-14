@@ -2230,11 +2230,6 @@
   dependencies:
     "color-name" "~1.1.4"
 
-"color-convert@~0.5.0":
-  "integrity" "sha1-vbbGnOZg+t/+CwAHzER+G59ygr0="
-  "resolved" "https://registry.npmjs.org/color-convert/-/color-convert-0.5.3.tgz"
-  "version" "0.5.3"
-
 "color-name@^1.0.0", "color-name@~1.1.4":
   "integrity" "sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA=="
   "resolved" "https://registry.npmjs.org/color-name/-/color-name-1.1.4.tgz"
@@ -5569,13 +5564,6 @@
   dependencies:
     "callsites" "^3.0.0"
 
-"parse-color@^1.0.0":
-  "integrity" "sha1-e3SLlag/A/FqlPU15S1/PZRlhhk="
-  "resolved" "https://registry.npmjs.org/parse-color/-/parse-color-1.0.0.tgz"
-  "version" "1.0.0"
-  dependencies:
-    "color-convert" "~0.5.0"
-
 "parse-json@^2.2.0":
   "integrity" "sha1-9ID0BDTvgHQfhGkJn43qGPVaTck="
   "resolved" "https://registry.npmjs.org/parse-json/-/parse-json-2.2.0.tgz"
@@ -5935,13 +5923,6 @@
   "resolved" "https://registry.npmjs.org/react-native-linear-gradient/-/react-native-linear-gradient-2.5.6.tgz"
   "version" "2.5.6"
 
-"react-native-photo-manipulator@^1.2.1":
-  "integrity" "sha512-d3RQzwfFVR0wcubYlZnzKw6pOq2741WQE0Vl7lW77IhVQnnQFzpqTQudojPeiHDTE+7+tk2UlGw9t7fI/oXF3w=="
-  "resolved" "https://registry.npmjs.org/react-native-photo-manipulator/-/react-native-photo-manipulator-1.2.1.tgz"
-  "version" "1.2.1"
-  dependencies:
-    "parse-color" "^1.0.0"
-
 "react-native-progress-dialog@^0.0.5":
   "integrity" "sha512-gpo+t9jF52l6rHyDoZqW1DYBL7MiUg6ROCJhTV1vql5ngb+IT4dy0ccd3sqYl8/AoC05QpFFcfh97HBBQ7RxUA=="
   "resolved" "https://registry.npmjs.org/react-native-progress-dialog/-/react-native-progress-dialog-0.0.5.tgz"
@@ -5995,7 +5976,7 @@
     "prop-types" "^15.5.10"
     "yargs" "^8.0.2"
 
-"react-native@*", "react-native@^0.47.0", "react-native@^0.66.4", "react-native@>=0.19.0", "react-native@>=0.42.0", "react-native@>=0.55", "react-native@>=0.57", "react-native@>=0.60", "react-native@0.61.5":
+"react-native@*", "react-native@^0.47.0", "react-native@^0.66.4", "react-native@>=0.19.0", "react-native@>=0.42.0", "react-native@>=0.55", "react-native@>=0.57", "react-native@0.61.5":
   "integrity" "sha512-9vx5dlSfQlKbbDtr8+xMon6qsmSu7jvjdXWZpEKh3XVKpUidbbODv7048gwVKX8YAel1egeR7hN8vzSeI6ssTw=="
   "resolved" "https://registry.npmjs.org/react-native/-/react-native-0.66.4.tgz"
   "version" "0.66.4"

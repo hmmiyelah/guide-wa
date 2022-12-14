@@ -9,7 +9,7 @@ import {
   ScrollView,
 } from 'react-native'
 import ViewPager from '@react-native-community/viewpager'
-import PhotoManipulator from 'react-native-photo-manipulator'
+// import PhotoManipulator from 'react-native-photo-manipulator'
 import RNFetchBlob from 'react-native-fetch-blob'
 import RNReactNativeSharingWinstagram from '@micabe/react-native-share-instagram'
 import Share from 'react-native-share'
@@ -153,23 +153,23 @@ export default class GuideContent extends Component {
       })
       y += 70
     }
-    PhotoManipulator.printText(require('../assets/images/bg.jpg'), texts).then(
-      (path) => {
-        log(`Result image path: ${path}`)
-        const fs = RNFetchBlob.fs
-        fs.readFile(path, 'base64').then((data) => {
-          this.setState({ progressVisible: false })
-          RNReactNativeSharingWinstagram.shareWithInstagram(
-            uuidv4(),
-            data,
-            (message) => {},
-            (error) => {
-              alert(error.message)
-            }
-          )
-        })
-      }
-    )
+    // PhotoManipulator.printText(require('../assets/images/bg.jpg'), texts).then(
+    //   (path) => {
+    //     log(`Result image path: ${path}`)
+    //     const fs = RNFetchBlob.fs
+    //     fs.readFile(path, 'base64').then((data) => {
+    //       this.setState({ progressVisible: false })
+    //       RNReactNativeSharingWinstagram.shareWithInstagram(
+    //         uuidv4(),
+    //         data,
+    //         (message) => {},
+    //         (error) => {
+    //           alert(error.message)
+    //         }
+    //       )
+    //     })
+    //   }
+    // )
   }
 
   shareWA() {
