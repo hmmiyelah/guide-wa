@@ -21,6 +21,7 @@ import global from '../global.js'
 import BannerSmallAd from '../components/BannerSmallAd'
 import { admobs } from '../utils/index.js'
 import NativeBigAd from '../components/NativeBigAd'
+import ApplovinNativeSmall from '../components/ApplovinNativeSmall'
 
 export default class Guide extends Component {
   constructor(props) {
@@ -237,7 +238,7 @@ export default class Guide extends Component {
                     index + 1 !==
                       this.state.categories.filter((cat) => cat.type !== 'ad')
                         .length && (
-                      <NativeBigAd />
+                      <ApplovinNativeSmall />
                       // <View>
                       //   {index === 1 ? (
                       //     <NativeBigAd />

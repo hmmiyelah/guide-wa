@@ -23,6 +23,7 @@ import AppLovinMAX from 'react-native-applovin-max'
 import { admobs, applovin } from '../utils/index.js'
 import BannerSmallAd from '../components/BannerSmallAd.js'
 import NativeBigAd from '../components/NativeBigAd.js'
+import ApplovinNativeBig from '../components/ApplovinNativeBig.js'
 
 export default class Settings extends Component {
   constructor(props) {
@@ -349,7 +350,8 @@ export default class Settings extends Component {
           </TouchableOpacity>
 
           <View style={{ marginTop: 50 }} />
-          <NativeBigAd />
+          {/* <NativeBigAd /> */}
+          <ApplovinNativeBig />
         </ScrollView>
         <BannerSmallAd />
         {/* <NativeAdView

@@ -44,7 +44,7 @@ const App = () => {
   }
 
   React.useEffect(() => {
-    initializeInterstitialAds()
+    setTimeout(() => initializeInterstitialAds(), 2000)
   }, [])
 
   // const [] = useOpenAppAds()
